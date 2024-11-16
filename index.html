@@ -26,7 +26,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>ZigMa: A DiT-style Mamba-based Diffusion Model</title>
+  <title>[MASK] is All You Need</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -163,9 +163,9 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <h2 class="subtitle has-text-centered" style="font-weight: bold;color:gray; margin-top: 25px;">
-        We present ZigMa, a scanning scheme that follows a zigzag pattern, considering both spatial continuity and parameter efficiency. We further adapt this scheme to video, separating the reasoning between spatial and temporal dimensions, thus achieving efficient parameter utilization. Our design allows for greater incorporation of inductive bias for non-1D data and improves parameter efficiency in diffusion models.
+        In generative models, two paradigms have gained attraction in various applications: next-set prediction-based Masked Generative Models and next-noise prediction-based Non-Autoregressive Models, e.g., Diffusion Models. In this work, we propose using discrete-state models to connect them and explore their scalability in the vision domain. First, we conduct a step-by-step analysis in a unified design space across two types of models including timestep-independence, noise schedule, temperature, guidance strength, etc in a scalable manner. Second, we re-cast typical discriminative tasks, e.g., image segmentation, as an unmasking process from [MASK] tokens on a discrete-state model. This enables us to perform various sampling processes, including flexible conditional sampling by only training once to model the joint distribution. All aforementioned explorations lead to our framework named Discrete Interpolants, which enables us to achieve state-of-the-art or competitive performance compared to previous discrete-state based methods in various benchmarks, like ImageNet256, MS COCO, and video dataset FaceForensics. In summary, by leveraging [MASK] in discrete-state models, we can bridge Masked Generative and Non-autoregressive Diffusion models, as well as generative and discriminative tasks. 
       </h2>
-      <img src="static/gif/teaser_gif.gif">
+    
     </div>
   </div>
 </section>
@@ -175,7 +175,7 @@
 <section class="hero ">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="doc/teaser_3col.png">
+      <img src="static/gif/website_teaser.gif">
     </div>
   </div>
 </section>
@@ -222,7 +222,7 @@
   <div class="container is-max-desktop content">
     <div class="columns is-centered">
       <div class="column has-text-centered">
-      <h2 class="title">Want to learn more about ZigMa?</h2>
+      <h2 class="title">Want to learn more about Our Method?</h2>
       <p>Check out our paper and code!</p>
       <div class="publication-links">
         <!-- Arxiv PDF link -->
@@ -298,7 +298,7 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">Acknowledgements</h2>
-    We would like to thank Timy Phan, Yunlu Chen for the extensive proofreading. 
+    We would like to thank Timy Phan, Moyang Li for the extensive proofreading. 
     This project has been supported by the German Federal Ministry for Economic Affairs and Climate Action within the project “NXT GEN AI METHODS – Generative Methoden für Perzeption, Prädiktion und Planung”, the bidt project KLIMA-MEMES, Bayer AG, and the German Research Foundation (DFG) project 421703927. The authors gratefully acknowledge the Gauss Center for Supercomputing for providing compute through the NIC on JUWELS at JSC and the HPC resources supplied by the Erlangen National High Performance Computing Center (NHR@FAU funded by DFG).
   
   </div>
@@ -311,9 +311,9 @@
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-        @InProceedings{hu2024zigma,
-              title={ZigMa: A DiT-style Zigzag Mamba Diffusion Model},
-              author={Vincent Tao Hu and Stefan Andreas Baumann and Ming Gui and Olga Grebenkova and Pingchuan Ma and Johannes Fischer and Björn Ommer},
+        @InProceedings{hu2024mask,
+              title={[MASK] is All You Need},
+              author={Vincent Tao Hu and Björn Ommer},
               booktitle = {Arxiv},
               year={2024}
         }</code></pre>
