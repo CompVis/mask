@@ -82,9 +82,9 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">[MASK] [MASK] [MASK] [MASK] [MASK]</h1>
-            <h1 class="title is-1 publication-title">[MASK] <span style="color: rgba(0, 0, 255, 0.507);">is</span>  [MASK] <span style="color: orange;">You</span>  [MASK]</h1>
-            <h1 class="title is-1 publication-title">[MASK] <span style="color: rgba(0, 0, 255, 0.507);">is</span>
+            <h1 id="title1" class="title is-1 publication-title">[MASK] [MASK] [MASK] [MASK] [MASK]</h1>
+            <h1 id="title2" class="title is-1 publication-title">[MASK] <span style="color: rgba(0, 0, 255, 0.507);">is</span>  [MASK] <span style="color: orange;">You</span>  [MASK]</h1>
+            <h1 id="title3" class="title is-1 publication-title">[MASK] <span style="color: rgba(0, 0, 255, 0.507);">is</span>
               <span style="color: green;">All</span> 
               <span style="color: orange;">You</span> 
               <span style="color: purple;">Need</span></h1>
@@ -161,6 +161,8 @@
 </section>
 
 
+
+
 <!-- Teaser video-->
 <section class="hero ">
   <div class="container is-max-desktop">
@@ -193,7 +195,6 @@
   <div class="container is-max-desktop">
     <div class="hero-body" id="landscape_img_list">
       <img src="./static/images/etm_itm.png">
-     
     </div>
   </div>
 </section>
@@ -204,6 +205,16 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <img src="static/gif/in256_vis_chain.npz.gif">
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Teaser video-->
+<section class="hero ">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/gif/ffs_indices_out256_chain_wall.gif">
     </div>
   </div>
 </section>
@@ -348,6 +359,26 @@
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
     <!-- End of Statcounter Code -->
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(() => {
+      document.getElementById('title1').style.display = 'block';
+    }, 1000); // 1 second delay
+
+    setTimeout(() => {
+      document.getElementById('title2').style.display = 'block';
+    }, 2000); // 2 seconds delay
+
+    setTimeout(() => {
+      document.getElementById('title3').style.display = 'block';
+    }, 3000); // 3 seconds delay
+  });
+</script>
+
 
   </body>
   </html>
