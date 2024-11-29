@@ -5,7 +5,7 @@ This repository represents the official implementation of the paper titled "[MAS
 
 [![Website](doc/badges/badge-website.svg)](https://compvis.github.io/mask)
 [![Paper](https://img.shields.io/badge/arXiv-PDF-b31b1b)](https://arxiv.org/abs/xxxx)
-[![Hugging Face Model](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-green)](https://huggingface.co/taohu/mask)
+[![Hugging Face Model](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-green)](https://huggingface.co/collections/taohu/mask-is-all-you-need-6749a2ca0be7c4c5c055c122)
 [![GitHub](https://img.shields.io/github/stars/CompVis/mask?style=social)](https://github.com/CompVis/mask)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/CompVis/mask?color=success&label=Issues)](https://github.com/CompVis/mask/issues?q=is%3Aissue+is%3Aclosed) 
 [![License](https://img.shields.io/badge/License-Apache--2.0-929292)](https://www.apache.org/licenses/LICENSE-2.0)
