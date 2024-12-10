@@ -40,17 +40,20 @@ Please cite our paper:
 * **` Dec. 10th, 2024`**: Arxiv released.
 
 
+## Trend
 
-#  Training
-
-
-# Sampling
+[![Star History Chart](https://api.star-history.com/svg?repos=CompVis/mask&type=Date)](https://star-history.com/#CompVis/mask&Date)
 
 
-# Prepare Environment
+## 🎫 License
+
+This work is licensed under the Apache License, Version 2.0 (as defined in the [LICENSE](LICENSE.txt)).
+
+By downloading and using the code and model you agree to the terms in the  [LICENSE](LICENSE.txt).
+
+[![License](https://img.shields.io/badge/License-Apache--2.0-929292)](https://www.apache.org/licenses/LICENSE-2.0)
 
 
-# Prepare Evaluation
 
 
 
