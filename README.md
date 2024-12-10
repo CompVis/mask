@@ -14,7 +14,9 @@ This repository represents the official implementation of the paper titled "[MAS
 [Vincent Tao Hu](http://taohu.me),
 [Björn Ommer](https://ommer-lab.com/people/ommer/ )
 
-TLDR: We present Discrete Interpolants, to bridge the Diffusion Models and Maskged Generative Models in discrete-state.
+## TLDR
+
+We present Discrete Interpolants, to bridge the Diffusion Models and Maskged Generative Models in discrete-state.
 
 ![teaser](./doc/method.jpg)
 
