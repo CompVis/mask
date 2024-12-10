@@ -16,6 +16,7 @@ This repository represents the official implementation of the paper titled "[MAS
 
 TLDR: We present Discrete Interpolants, to bridge the Diffusion Models and Maskged Generative Models in discrete-state.
 
+![teaser](./doc/method.jpg)
 
 ## 💪To-Do List 
 
