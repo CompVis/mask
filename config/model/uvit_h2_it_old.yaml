@@ -1,0 +1,21 @@
+name: uvit_h2_it_old
+target: models.discrete_uvit_old.UViT
+params:
+    vocab_size: ${tokenizer.vocab_size}
+    image_size: ${tokenizer.latent_size}
+    img_size: ${tokenizer.latent_size}
+    in_channels: 1
+    patch_size: 2
+    embed_dim: 1152
+    depth: 29
+    num_heads: 16
+    use_pe: 1
+    use_checkpoint: false
+    mlp_time_embed: 0
+    num_classes: ${data.num_classes}
+    time_cond: false
+   
+
+
+
+

@@ -1,0 +1,28 @@
+name: ffs_indices
+
+train_steps: 1_000_000
+sample_vis_n: 16
+video_frames: 16
+fps: 8
+sample_vis_every: 20_00
+
+batch_size: 3
+image_size: 256
+num_classes: -1
+
+subset: train
+sample_fid_n: 5_000
+eval_last_fid_num: 50_000
+sample_fid_every: 50_000
+sample_fid_bs: ${data.batch_size}
+
+npz_real: ./data/faceforensics_rawavi_train_wds_fidstat_real_50k.npz
+fvd_real_video_dir: ./data/ffs_train_gt_videos
+
+h5_path: ./data/faceforensics_train_indices.h5
+num_train_examples: 704
+per_gpu_batch_size: ${data.batch_size}
+global_batch_size: null
+num_workers_per_gpu: 4 
+frame_interval: 1
+pin_memory: true

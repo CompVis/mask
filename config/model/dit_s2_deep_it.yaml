@@ -1,0 +1,12 @@
+name: dit_s2_deep_it
+target: models.discrete_dit.DiT
+params:
+    vocab_size: ${tokenizer.vocab_size}
+    img_dim: ${tokenizer.latent_size}
+    embed_dim: 512
+    depth: 16
+    in_chans: 1
+    num_heads: 8
+    use_pe: 1
+    num_classes: ${data.num_classes}
+    time_cond: false

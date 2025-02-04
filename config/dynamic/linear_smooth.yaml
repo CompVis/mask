@@ -1,0 +1,19 @@
+name: linear_smooth
+mask_ce: true
+elbo: false 
+sigmoid_shift: none
+
+disint:
+  scheduler: linear
+  coupling: ucoupling
+  ccoupling_prob: 0.8
+  cubic_a: 2.0
+  cubic_b: 0.5
+  smooth: 1e-8
+
+  sampler: simple  
+
+
+  step_num: ${dstep_num}
+  sample_t_min: 0.0 
+

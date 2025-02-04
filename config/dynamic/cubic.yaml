@@ -1,0 +1,19 @@
+name: cubic
+mask_ce: true
+elbo: false 
+sigmoid_shift: none
+
+disint:
+  scheduler: cubic
+  coupling: ucoupling
+  ccoupling_prob: 0.8
+  cubic_a: 0.0
+  cubic_b: 1.0
+  smooth: 0.0
+
+  sampler: simple  
+
+
+  step_num: ${dstep_num}
+  sample_t_min: 0.0 
+

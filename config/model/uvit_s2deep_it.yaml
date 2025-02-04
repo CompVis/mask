@@ -1,0 +1,23 @@
+name: uvit_s2deep_it
+target: models.discrete_uvit.UViT
+params:
+    vocab_size: ${tokenizer.vocab_size}
+    image_size: ${tokenizer.latent_size}
+    img_size: ${tokenizer.latent_size}
+    in_channels: 1
+    patch_size: 2
+    embed_dim: 512
+    depth: 16
+    num_heads: 8
+    class_dropout_prob: 0.1
+    clip_null_npy: ./data/clip_empty_context.npy
+    use_pe: 1
+    mlp_time_embed: 0
+    num_classes: -666 # a special value to indicate text conditioning
+    time_cond: False
+   
+
+
+
+ 
+

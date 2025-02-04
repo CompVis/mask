@@ -1,0 +1,13 @@
+name: dit_xl2_it
+target: models.discrete_dit.DiT
+params:
+    vocab_size: ${tokenizer.vocab_size}
+    img_dim: ${tokenizer.latent_size}
+    patch_size: 2
+    embed_dim: 1152
+    depth: 28
+    in_chans: 1
+    num_heads: 16
+    use_pe: 1
+    num_classes: ${data.num_classes}
+    time_cond: false

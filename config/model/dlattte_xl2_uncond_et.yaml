@@ -1,0 +1,7 @@
+name: dlattte_xl2_uncond_et
+target: models.discrete_latte.Latte_XL_2
+params:
+  num_classes: ${data.num_classes}
+  vocab_size: ${tokenizer.vocab_size}
+  time_cond: true
+  extras: 1 #1:uncond,2:label-cond,

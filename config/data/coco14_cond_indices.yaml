@@ -1,0 +1,32 @@
+name: coco14_cond_indices
+
+train_steps: 400_000
+sample_vis_n: 16
+video_frames: 0
+sample_vis_every: 20_00
+
+batch_size: 3
+image_size: 256
+num_classes: -666
+
+subset: train
+sample_fid_n: 5_000
+eval_last_fid_num: 50_000
+sample_fid_every: 50_000
+sample_fid_bs: ${data.batch_size}
+
+
+npz_real: ./data/uvit_fid_stats/fid_stats_mscoco256_val.npz
+
+
+train_shards_path: ./data/coco_raw_varysize_wds_indices/train-{000000..000246}.tar
+eval_shards_path: ./data/coco_raw_varysize_wds_indices/val-{000000..000120}.tar
+num_train_examples: 82783
+per_gpu_batch_size: ${data.batch_size}
+global_batch_size: null
+num_workers_per_gpu: 2
+crop_size: ${data.image_size}
+resize_shorter_edge: ${data.image_size}
+random_crop: false
+random_flip: false 
+pin_memory: true

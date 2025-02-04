@@ -1,0 +1,33 @@
+name: cs_wds_indices
+
+train_steps: 400_000
+sample_vis_n: 16
+video_frames: -1
+sample_vis_every: 20_00
+
+batch_size: 3
+image_size: 256
+num_classes: 8
+
+random_crop: false #back-compatibility for cal_real_fid_statistics.py, it's never used in training
+crop_size: ${data.image_size} #back-compatibility for cal_real_fid_statistics.py, it's never used in training
+
+subset: train
+sample_fid_n: 5_000
+eval_last_fid_num: 50_000
+sample_fid_every: 50_000
+sample_fid_bs: ${data.batch_size}
+pin_memory: true
+
+npz_real: ./data/cityscapes_res256_compressed_train_res256_fidstat_real_50k.npz
+
+
+
+train_shards_path: ./data/cs256_raw_wds_train_aug32_indices_v2/train-{000000..000080}.tar
+eval_shards_path: ./data/cs256_raw_wds_train_aug32_indices_v2/train-{000000..000080}.tar
+num_train_examples: 704
+per_gpu_batch_size: ${data.batch_size}
+global_batch_size: null
+num_workers_per_gpu: 2 
+frame_interval: 1
+

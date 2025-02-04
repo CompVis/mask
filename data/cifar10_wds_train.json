@@ -1,0 +1,121 @@
+{
+  "__kind__": "wids-shard-index-v1",
+  "wids_version": 1,
+  "shardlist": [
+    {
+      "url": "./cifar10_wds_train/train-000000.tar",
+      "md5sum": "07c6193873e6d16fcff899ebf76ae6ce",
+      "nsamples": 2702,
+      "filesize": 15298560
+    },
+    {
+      "url": "./cifar10_wds_train/train-000001.tar",
+      "md5sum": "dc3e42e9c42ff94b8489f7478568e9cc",
+      "nsamples": 2710,
+      "filesize": 15319040
+    },
+    {
+      "url": "./cifar10_wds_train/train-000002.tar",
+      "md5sum": "257cc9a778ca063744ac30611124f7ec",
+      "nsamples": 2712,
+      "filesize": 15329280
+    },
+    {
+      "url": "./cifar10_wds_train/train-000003.tar",
+      "md5sum": "eb85e8d63313a6bbcc7ae27af8d75025",
+      "nsamples": 2716,
+      "filesize": 15349760
+    },
+    {
+      "url": "./cifar10_wds_train/train-000004.tar",
+      "md5sum": "058b89d19f327232264f160c277781c9",
+      "nsamples": 2710,
+      "filesize": 15308800
+    },
+    {
+      "url": "./cifar10_wds_train/train-000005.tar",
+      "md5sum": "d7926bc28b0ee2a3e5e64ba8f80b83fe",
+      "nsamples": 2706,
+      "filesize": 15308800
+    },
+    {
+      "url": "./cifar10_wds_train/train-000006.tar",
+      "md5sum": "1ed7ad57cc16b155c1f2a702af431b0c",
+      "nsamples": 2701,
+      "filesize": 15288320
+    },
+    {
+      "url": "./cifar10_wds_train/train-000007.tar",
+      "md5sum": "14a4a7b8e6d630d226a1d949d83dee66",
+      "nsamples": 2712,
+      "filesize": 15329280
+    },
+    {
+      "url": "./cifar10_wds_train/train-000008.tar",
+      "md5sum": "5a15b704903c1f78f3cc4a9f1977f3c9",
+      "nsamples": 2701,
+      "filesize": 15278080
+    },
+    {
+      "url": "./cifar10_wds_train/train-000009.tar",
+      "md5sum": "9a0544e85c8d4847d46508f32a351a93",
+      "nsamples": 2707,
+      "filesize": 15329280
+    },
+    {
+      "url": "./cifar10_wds_train/train-000010.tar",
+      "md5sum": "0fd743a77a4b96234478e1e86164c35e",
+      "nsamples": 2703,
+      "filesize": 15288320
+    },
+    {
+      "url": "./cifar10_wds_train/train-000011.tar",
+      "md5sum": "57e93e17d7171c701fa7e8451500b230",
+      "nsamples": 2708,
+      "filesize": 15308800
+    },
+    {
+      "url": "./cifar10_wds_train/train-000012.tar",
+      "md5sum": "bb6893b0f43c3846bbd1c64915e38ff6",
+      "nsamples": 2707,
+      "filesize": 15308800
+    },
+    {
+      "url": "./cifar10_wds_train/train-000013.tar",
+      "md5sum": "63d4b4f4f20547997f1832adf10c7bc3",
+      "nsamples": 2707,
+      "filesize": 15308800
+    },
+    {
+      "url": "./cifar10_wds_train/train-000014.tar",
+      "md5sum": "db2091b9be1ba38abee2020b41940033",
+      "nsamples": 2716,
+      "filesize": 15360000
+    },
+    {
+      "url": "./cifar10_wds_train/train-000015.tar",
+      "md5sum": "0c9635de9240729654047beb788da666",
+      "nsamples": 2714,
+      "filesize": 15339520
+    },
+    {
+      "url": "./cifar10_wds_train/train-000016.tar",
+      "md5sum": "14b47470556cdac3ff6cb1b264ba7dcd",
+      "nsamples": 2708,
+      "filesize": 15308800
+    },
+    {
+      "url": "./cifar10_wds_train/train-000017.tar",
+      "md5sum": "cbbe1a1ac1096e90a79d0b05ff44bae1",
+      "nsamples": 2716,
+      "filesize": 15360000
+    },
+    {
+      "url": "./cifar10_wds_train/train-000018.tar",
+      "md5sum": "d9ffdee336ff2661c2a0e5bbe7bc3eb1",
+      "nsamples": 1244,
+      "filesize": 7055360
+    }
+  ],
+  "name": "data-cifar10_wds_train-train"
+}

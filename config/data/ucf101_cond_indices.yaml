@@ -1,0 +1,27 @@
+name: ucf101_cond_indices
+
+train_steps: 1_000_000
+sample_vis_n: 16
+video_frames: 16
+sample_vis_every: 20_00
+
+batch_size: 3
+image_size: 256
+num_classes: 101
+
+subset: train
+sample_fid_n: 5_000
+eval_last_fid_num: 50_000
+sample_fid_every: 50_000
+sample_fid_bs: ${data.batch_size}
+
+npz_real: ./data/ucf101_rawavi_wds_fidstat_real_50k.npz
+
+
+h5_path: ./data/ucf101_train_indices_v2.h5
+num_train_examples: 13_320
+per_gpu_batch_size: ${data.batch_size}
+global_batch_size: null
+num_workers_per_gpu: 4 #follow titok
+frame_interval: 1
+pin_memory: true

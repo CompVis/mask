@@ -1,0 +1,8 @@
+name: sd_vq_f8_res512
+vocab_size: 16385 #16384+1
+token_len: 4096
+latent_size: 64
+ckpt_path: "./pretrained_ckpt/ldm/vq-f8.ckpt"
+config_path: "./ldm/models/first_stage_models/vq-f8/config.yaml"
+mask_token_id: 16384
+mask_token_reindex: 0

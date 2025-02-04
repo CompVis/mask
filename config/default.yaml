@@ -1,0 +1,83 @@
+defaults:
+  - data: imagenet256_cond_indices
+  - model: uvit_h2_et
+  - wandb: default
+  - optim: default
+  - dynamic: default
+  - lrschedule: default
+  - tokenizer: sd_vq_f8
+  - _self_
+
+
+
+input_tensor_type: bt
+
+accum: 1
+mixed_precision: null #fp8, bf16, fp32, no
+
+resume: null
+ckpt: null  
+ckpt_latte: null
+
+
+use_fsdp: 0 #0:false, 1:zero2, 2:full
+ds:
+  zero_stage: 2
+
+
+
+global_seed: 0
+log_every: 100
+ckpt_every: 10_000
+sample_every: 10_000
+max_grad_norm: 1.0   #dimba use 0.05, Sana use 1.0, default use 2.0
+
+
+use_wandb: true
+note: note   
+timestamp: 
+use_ema: true
+ema_rate: 0.9999
+
+
+debug: false 
+use_cfg: false
+cfg_scale: null #4.0
+sm_t: 1.0 #softmax temperature
+
+ss: i2l #sample_strategy
+
+
+num_fid_samples: 50_000
+dstep_num: 250 
+
+
+sample_mode: null 
+sample_dir: samples
+
+
+
+##### maskgit sampling
+top_k: 0
+top_p: 0
+maskgit_randomize: none
+maskgit_mode: linear #root, linear, cosine, arccos, square
+anneal_noise: none 
+
+vae: ema #", type=str, choices=["ema", "mse"], default="ema")  # Choice doesn't affect training
+
+wandb_tag: null
+offline: 
+   max_last: false
+   save_samples_to_disk: false
+   lbs: 4
+
+
+job_name: ${dynamic.name}_${model.name}_${data.name}_bs${data.batch_size}
+run_dir: outputs/${job_name}/${now:%Y-%m-%d_%H-%M-%S}_${timestamp} #_${hydra.job.id}
+
+
+
+
+
+

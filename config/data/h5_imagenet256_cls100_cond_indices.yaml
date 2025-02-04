@@ -1,0 +1,31 @@
+name: h5_imagenet256_cls100_cond_indices
+
+train_steps: 400_000
+sample_vis_n: 16
+video_frames: 0
+sample_vis_every: 20_00
+
+batch_size: 3
+image_size: 256
+num_classes: 100
+
+subset: train
+sample_fid_n: 5_000
+eval_last_fid_num: 50_000
+sample_fid_every: 50_000
+sample_fid_bs: ${data.batch_size}
+
+npz_real: ./data/imagenet256_raw_wds_train_fidstat_real_50k.npz
+
+
+
+h5_path: ./data/imagenet100_size256.h5
+num_train_examples: 128_1167
+per_gpu_batch_size: ${data.batch_size}
+global_batch_size: null
+num_workers_per_gpu: 4 
+crop_size: ${data.image_size}
+resize_shorter_edge: ${data.image_size}
+random_crop: false
+random_flip: false 
+pin_memory: true

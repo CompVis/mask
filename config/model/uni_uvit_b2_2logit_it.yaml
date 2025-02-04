@@ -1,0 +1,25 @@
+name: uni_uni_b2_2logit_tc0
+target: models.uni_2logit_tc0.UnifiedTransformer
+params:
+    vocab_size: ${tokenizer.vocab_size}
+    image_size: ${tokenizer.latent_size}
+    image_tokenizer: ${tokenizer.name}
+    in_channels: 1
+    patch_size: 2
+    embed_dim: 768
+    depth: 17
+    num_heads: 12
+    use_pe: 1
+    second_modal_type: mask
+    attend: uvit
+    num_classes: ${data.num_classes}
+    time_cond: False
+
+
+   
+   
+
+
+
+ 
+
