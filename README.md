@@ -20,11 +20,7 @@ We present Discrete Interpolants, to bridge the Diffusion Models and Maskged Gen
 
 ![teaser](./doc/method.jpg)
 
-## 💪To-Do List 
 
-- [ ] Inference code. Dec,19th.
-- [ ] Training code. Dec,19th.
-- [ ] Checkpoints release. Dec,19th.
 
 ## 🎓 Citation
 
@@ -40,6 +36,7 @@ Please cite our paper:
 ```
 
 ## :white_check_mark: Updates
+* **` Feb. 4th, 2025`**: Training code released.
 * **` Dec. 10th, 2024`**: Arxiv released.
 
 
