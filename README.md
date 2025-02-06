@@ -66,7 +66,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --num_processes 4 --num_machines 
 
 |   Dataset   | Model | FID $\downarrow$ | HF weights🤗                                                                        |
 |:----------:|:-----:|:-------:|:------------------------------------------------------------------------------------|
-|  ImageNet $256\times 256$, latents: $32\times 32$| DiT_XL2_IT   |  8.26   | [weight.pth](https://huggingface.co/FoundationVision/infinity/blob/main/infinity_vae_d16.pth) |
+|  ImageNet $256\times 256$, latents: $32\times 32$| DiT_XL2_IT   |  8.26   | [weight.pth](https://huggingface.co/CompVis/discrete_interpolants/blob/main/1220000.pt) |
 
 
 
