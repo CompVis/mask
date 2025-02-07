@@ -92,7 +92,7 @@ TODO
 
 ## Trend
 
-[![Star History Chart](https://api.star-history.com/svg?repos=CompVis/discrete-interpolants&type=Date)](https://star-history.com/#CompVis/mask&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=CompVis/discrete-interpolants&type=Date)](https://star-history.com/#CompVis/discrete-interpolants&Date)
 
 
 ## 🎫 License
