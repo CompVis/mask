@@ -54,7 +54,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch  --num_processes 4 --num_machines
 CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch   --num_processes 4 --num_machines 1 --main_process_ip 127.0.0.1 --main_process_port 8868    train_acc_vq.py  model=uvit_h2_it dynamic=linear   input_tensor_type=bwh tokenizer=sd_vq_f8 data=imagenet256_cond_indices data.batch_size=64 data.sample_vis_n=16 data.sample_fid_every=50_000 ckpt_every=20_000 data.train_steps=1500_000  data.sample_fid_n=5_000 optim.name=adamw optim.lr=1e-4 optim.wd=0.0 lrschedule.warmup_steps=1     mixed_precision=bf16 accum=1
 ```
 
-#### FaceForensics training(accelerator,bs256)
+#### FaceForensics training(accelerator,bs64)
 
 
 ```bash
