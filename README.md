@@ -90,6 +90,11 @@ TODO
 |  COCO $256\times 256$, latents: $32\times 32$| DiT_S2Deep_IT   |  -   | [weight.pth](https://huggingface.co/CompVis/discrete_interpolants/blob/main/coco14_uvit_s2deep_it_1600000.pt) |
 
 
+
+## Dataset Preparation
+
+TODO
+
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=CompVis/discrete-interpolants&type=Date)](https://star-history.com/#CompVis/discrete-interpolants&Date)
