@@ -58,7 +58,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch   --num_processes 4 --num_machine
 
 
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch   --num_processes 4 --num_machines 1 --main_process_ip 127.0.0.1 --main_process_port 8868 train_acc_vq.py      model=dlattte_xl2_uncond_it  dynamic=linear  input_tensor_type=btwh tokenizer=sd_vq_f8  data=ffs_indices data.sample_fid_every=10_000  data.batch_size=2  data.sample_fid_bs=1   data.sample_fid_n=10_00 data.train_steps=400_000  data.sample_vis_n=1 ckpt_latte=pretrained_ckpt/dit/DiT-XL-2-256x256.pt ds.zero_stage=2 accum=8 mixed_precision=bf16 
+CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch   --num_processes 4 --num_machines 1 --main_process_ip 127.0.0.1 --main_process_port 8868 train_acc_vq.py      model=dlattte_xl2_uncond_it  dynamic=linear  input_tensor_type=btwh tokenizer=sd_vq_f8  data=ffs_indices data.sample_fid_every=10_000  data.batch_size=2  data.sample_fid_bs=1   data.sample_fid_n=10_00 data.train_steps=400_000  data.sample_vis_n=1 ckpt_latte=pretrained_ckpt/dit/DiT-XL-2-256x256.pt  accum=8 mixed_precision=bf16 
 ```
 
 
